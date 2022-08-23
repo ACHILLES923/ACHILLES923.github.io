@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Outfit:wght@200&display=swap');
+        body{
+            margin: 0;
+        }
+        .container{
+            /*border: 2px solid red;*/
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #a2d0e3;
+        }
+
+        .qr{
+            /*border: 2px solid blueviolet;*/
+            width: 20%;
+            border-radius: 15px;
+            background: white;
+            /*height: 50vh;*/
+        }
+
+        .qrPhoto{
+            /*border: 1px solid hotpink;*/
+            margin: 13px;
+            padding: 3px;
+
+        }
+
+        .qrPhoto img{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .qrText1{
+            /*border: 1px solid hotpink;*/
+            margin: 10px auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            width: 87%;
+        }
+
+        .qrText2{
+                /*border: 1px solid crimson;*/
+                text-align: center;
+                font-family: 'Outfit', sans-serif;
+                font-size: 14px;
+                width: 70%;
+                margin: 20px auto;
+        }
+
+        @media (max-width: 1000px){
+            .qr{
+            width: 50%;
+            }
+
+            .qrPhoto img{
+                width: 100%;
+                height: 50%;
+            }
+
+            .qrText1{
+                font-size: 12px;
+            }
+
+            .qrText2{
+                font-size: 8px;
+            }
+
+        }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="qr">
+            <div class="qrPhoto">
+                <img src="/images/image-qr-code.png" alt="qr">
+            </div>
+            <div class="qrText1">
+                Improve your Front-end skills by building projects
+            </div>
+            <div class="qrText2">
+                Scan the QR code to visit Frontend Mentor and take your coding skills to next level.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
